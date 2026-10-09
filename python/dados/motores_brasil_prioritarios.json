@@ -1,0 +1,69 @@
+{
+  "data_revisao": "2026-08-15",
+  "metodo": "Prioridade inicial baseada em modelos recorrentes na frota e emplacamentos brasileiros. A familia/codigo exato deve ser confirmado pelo VIN, etiqueta, manual de servico ou catalogo do fabricante em cada coleta.",
+  "prioridades": [
+    {
+      "ordem": 1,
+      "familia_coleta": "FIAT_FIRE_1.0_1.4",
+      "exemplos_modelos": ["Uno", "Palio", "Siena", "Strada", "Fiorino"],
+      "motivo": "grande frota legada e mecanica amplamente difundida",
+      "fase": "piloto legado"
+    },
+    {
+      "ordem": 2,
+      "familia_coleta": "VW_EA111_1.0_1.6",
+      "exemplos_modelos": ["Gol", "Fox", "Voyage", "Saveiro"],
+      "motivo": "grande frota legada em diversos modelos Volkswagen",
+      "fase": "piloto legado"
+    },
+    {
+      "ordem": 3,
+      "familia_coleta": "GM_FAMILIA_I_SPE4_1.0_1.4",
+      "exemplos_modelos": ["Corsa", "Celta", "Classic", "Prisma", "Onix primeira geracao"],
+      "motivo": "alta presenca historica na frota brasileira",
+      "fase": "piloto legado"
+    },
+    {
+      "ordem": 4,
+      "familia_coleta": "VW_EA211_1.0_MPI_TSI",
+      "exemplos_modelos": ["up!", "Polo", "Virtus", "T-Cross", "Nivus"],
+      "motivo": "familia presente em modelos de alto volume recentes",
+      "fase": "piloto atual"
+    },
+    {
+      "ordem": 5,
+      "familia_coleta": "FIAT_GSE_FIREFLY_1.0_1.3",
+      "exemplos_modelos": ["Mobi", "Argo", "Cronos", "Strada", "Pulse"],
+      "motivo": "familia presente em modelos Fiat de alto volume recentes",
+      "fase": "piloto atual"
+    },
+    {
+      "ordem": 6,
+      "familia_coleta": "HYUNDAI_KAPPA_1.0",
+      "exemplos_modelos": ["HB20", "HB20S"],
+      "motivo": "HB20 e HB20S mantem participacao relevante no mercado",
+      "fase": "expansao"
+    },
+    {
+      "ordem": 7,
+      "familia_coleta": "RENAULT_SCE_1.0",
+      "exemplos_modelos": ["Kwid", "Sandero", "Logan"],
+      "motivo": "motores compactos difundidos em veiculos de entrada",
+      "fase": "expansao"
+    },
+    {
+      "ordem": 8,
+      "familia_coleta": "GM_CSS_PRIME_1.0",
+      "exemplos_modelos": ["Onix", "Onix Plus", "Tracker", "Montana"],
+      "motivo": "familia atual em modelos Chevrolet de alto volume",
+      "fase": "expansao"
+    },
+    {
+      "ordem": 9,
+      "familia_coleta": "FORD_ZETEC_ROCAM_1.0_1.6",
+      "exemplos_modelos": ["Ka", "Fiesta", "EcoSport"],
+      "motivo": "frota legada ainda relevante e distinta acusticamente",
+      "fase": "expansao legado"
+    }
+  ]
+}

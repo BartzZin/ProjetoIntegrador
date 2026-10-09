@@ -1,0 +1,116 @@
+{
+  "data_revisao": "2026-08-15",
+  "criterio": "Uma fonte publica so entra no treinamento quando a licenca permite o uso e a procedencia de cada rotulo e verificavel.",
+  "fontes": [
+    {
+      "nome": "AI Mechanic - Engine Condition Audio Fault Finding",
+      "url": "https://www.kaggle.com/datasets/eoinedge/ai-mechanic-engine-condition-audio-fault-finding",
+      "tipo": "audio automotivo",
+      "licenca": "Apache-2.0",
+      "acesso": "publico via Kaggle",
+      "conteudo": "background_noise, normal e faulty; motor BMW M54B25 2004 com falhas simuladas",
+      "uso_recomendado": "validar o pipeline e pre-treinar NORMAL x ANOMALIA_NAO_ESPECIFICADA",
+      "limitacao": "um unico conjunto motor/veiculo; nao representa motores brasileiros nem defeitos finos"
+    },
+    {
+      "nome": "DCASE 2024 Task 10 - Acoustic-based Traffic Monitoring",
+      "url": "https://zenodo.org/records/10700792",
+      "tipo": "audio de passagem de carros e comerciais",
+      "licenca": "confirmar os termos do registro antes de redistribuir",
+      "acesso": "publico no Zenodo; engine-sounds.zip tem aproximadamente 709 MB",
+      "conteudo": "sons de motores separados em car e commercial vehicles, sem rotulo de defeito",
+      "uso_recomendado": "negativos, robustez a dominio e mistura de ruido; nao usar como classe de falha",
+      "limitacao": "captacao de trafego, diferente do celular junto ao cofre em marcha lenta"
+    },
+    {
+      "nome": "OtoMobile / OtoMechanic",
+      "url": "https://zenodo.org/records/3382945",
+      "tipo": "componentes automotivos com falha",
+      "licenca": "uso educacional e de pesquisa; acesso restrito mediante solicitacao",
+      "acesso": "registro publico, arquivos restritos",
+      "conteudo": "65 gravacoes, 12 problemas, diagnostico informado por mecanico ou por pessoa que consultou mecanico",
+      "uso_recomendado": "avaliacao externa e estudo de taxonomia apos obter acesso",
+      "limitacao": "pequeno, sem cobertura sistematica de familias de motor"
+    },
+    {
+      "nome": "Vehicular Acoustic Fault Dataset (VAFD)",
+      "url": "https://github.com/amrrashed/Beyond-Sensors-Audio-Based-ML-for-Real-Time-Vehicle-Fault-Emergency-Classification",
+      "tipo": "audio de falhas veiculares",
+      "licenca": "nao foi identificada licenca explicita no repositorio na revisao",
+      "acesso": "repositorio publico",
+      "conteudo": "classes de falhas veiculares, sons normais e caracteristicas extraidas",
+      "uso_recomendado": "referencia metodologica; solicitar confirmacao de licenca antes de incorporar audios",
+      "limitacao": "repositorio publico nao equivale a permissao de reutilizacao"
+    },
+    {
+      "nome": "Car Diagnostics Dataset",
+      "url": "https://www.kaggle.com/datasets/malakragaie/car-diagnostics-dataset",
+      "tipo": "audio automotivo",
+      "licenca": "Unknown",
+      "acesso": "publico via Kaggle",
+      "conteudo": "1386 WAV em braking, idle e start-up, com rotulos como serpentine belt e bad ignition",
+      "uso_recomendado": "nao incorporar ao treinamento ate obter permissao e verificar a origem de cada arquivo",
+      "limitacao": "pagina declara fontes YouTube e Pond5 e nao fornece uma licenca reutilizavel"
+    },
+    {
+      "nome": "SENATRAN - Frota RENAVAM",
+      "url": "https://www.gov.br/transportes/pt-br/assuntos/transito/senatran/estatisticas-senatran",
+      "tipo": "estatistica de frota, nao audio",
+      "licenca": "dados publicos; conferir metadados de cada recurso",
+      "acesso": "publico",
+      "conteudo": "quantidade por UF, municipio, ano, combustivel, marca e modelo",
+      "uso_recomendado": "definir quais modelos e familias mecanicas priorizar na coleta brasileira",
+      "limitacao": "nao informa defeitos nem fornece audio"
+    },
+    {
+      "nome": "FENABRAVE - Ranking de emplacamentos",
+      "url": "https://www.fenabrave.org.br/portal/files/2025_12_02.pdf",
+      "tipo": "estatistica de mercado, nao audio",
+      "licenca": "relatorio institucional; nao e dataset de treinamento",
+      "acesso": "publico",
+      "conteudo": "ranking acumulado de modelos emplacados em 2025",
+      "uso_recomendado": "combinar com a frota SENATRAN para priorizar modelos atuais e legados",
+      "limitacao": "popularidade do modelo nao identifica automaticamente o motor instalado"
+    },
+    {
+      "nome": "NHTSA Complaints e Recalls",
+      "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+      "tipo": "reclamacoes de consumidores e recalls dos Estados Unidos, nao audio",
+      "licenca": "dados publicos governamentais; observar a politica de uso da API",
+      "acesso": "API publica integrada em /api/v1/contexto/nhtsa",
+      "conteudo": "reclamacoes, componentes citados e recalls por marca, modelo e ano",
+      "uso_recomendado": "contexto explicativo separado da probabilidade acustica",
+      "limitacao": "nao representa prevalencia de defeitos nem a frota brasileira"
+    },
+    {
+      "nome": "Automotive Faults Dataset for Diagnostic and Maintenance Systems",
+      "url": "https://zenodo.org/records/15626055",
+      "tipo": "dados estruturados de sintomas e logica de diagnostico, nao audio",
+      "licenca": "nao declarada no registro consultado",
+      "acesso": "arquivos publicos no Zenodo",
+      "conteudo": "falhas, sintomas, procedimentos, resultados e fluxogramas",
+      "uso_recomendado": "referencia para uma futura arvore de apoio ao diagnostico",
+      "limitacao": "nao usar ou redistribuir no aplicativo sem confirmar a permissao de reutilizacao"
+    },
+    {
+      "nome": "MIMII",
+      "url": "https://zenodo.org/records/3384388",
+      "tipo": "audio de maquinas industriais normais e anomalas",
+      "licenca": "CC BY-SA 4.0",
+      "acesso": "publico no Zenodo; aproximadamente 100 GB",
+      "conteudo": "valvulas, bombas, ventiladores e trilhos deslizantes com ruido de fabrica",
+      "uso_recomendado": "comparar tecnicas de deteccao de anomalia e robustez a ruido",
+      "limitacao": "nao contem motores de automoveis nem rotulos de falhas automotivas"
+    },
+    {
+      "nome": "ToyADMOS2",
+      "url": "https://zenodo.org/records/4580270",
+      "tipo": "audio normal e anomalo de maquinas em miniatura",
+      "licenca": "consultar LICENSE.pdf do registro antes de reutilizar",
+      "acesso": "publico no Zenodo; aproximadamente 169 GB",
+      "conteudo": "carros, trens e maquinas de brinquedo sob mudanca de dominio",
+      "uso_recomendado": "estudar deteccao de anomalia e generalizacao de dominio",
+      "limitacao": "maquinas em miniatura; nao deve ser combinado como se fosse audio de motor automotivo real"
+    }
+  ]
+}
